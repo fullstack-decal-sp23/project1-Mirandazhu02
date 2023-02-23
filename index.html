@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miranda Zhu Portfolio</title>
+    <meta name="author" content="Miranda">
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        background-image: url(images/istockphoto-1367021514-612x612.jpg);
+        height: 100vh;
+        background-size: cover;
+      }
+    </style>
+    <title>Guess My Favorite Movie</title>
+	<script type="text/javascript">
+		function guessMovie() {
+			var movieInput = document.getElementById("movie").value;
+			var guessMessage = document.getElementById("guess-message");
+
+			if (movieInput.toLowerCase() === "avatar") {
+				guessMessage.innerHTML = "Correct! Avatar is my favorite movie!";
+			} else {
+				guessMessage.innerHTML = "Sorry, that's not my favorite movie. Keep guessing!";
+			}
+		}
+	</script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <botton class= "icon-button" onclick="alert('Meow!')">
+            <img src="images/logo.png" alt="Meow" />
+        </botton>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html#">Main</a></li>
+          <li><a href="http://127.0.0.1:5500/project.html">Project</a></li>
+          <li><a href="http://127.0.0.1:5500/Gallery.html">Gallery</a></li>
+        </ul>
+      </nav>
+      <div class="row">
+        <div class="col-1">
+          <h1>Hello, I'm Miranda!</h1>
+          <div class="main__content">
+            <div class="main__text">
+              <h2>
+                I am Miranda Zhu, <br />
+                first-year student studying Computer Science at UC Berkeley
+              </h2>
+              <p>
+                I'm an international student from Tibet In my free time, I enjoy
+                dancing and singing. <br />I'm also a big fan of a NCT, a kpop
+                band.
+              </p>
+            </div>
+            <div class="main__image">
+              <img src="images/Image.png" alt="face" class="main__img" />
+            </div>
+        <div class="form">
+          <h2>Guess My Favorite Movie</h2>
+          <h5>Hint: Science Fiction Film </h5>
+          <label for="guess">Guess</label>
+          <input type="text" id="movie">
+          <button onclick="guessMovie()">check!</button>
+          <p id="guess-message"></p>
+        </div>
+      <div class="lavender__bar">
+        <img src="images/icons8-mail-64.png" alt="email icon" />
+        <p id="myHeader">Email: Mirandazhu@berkeley.edu</p>
+    </div>
+  </body>
+</html>
